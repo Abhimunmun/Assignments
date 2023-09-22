@@ -46,7 +46,7 @@ public class Checkvowconsstr {
     }
 }
 
-Q.3 Given a string, write a program to remove all the whitespaces from the string.
+Q.4 Given a string, write a program to remove all the whitespaces from the string.
 
 
 public class Spacermvstr {
@@ -59,7 +59,7 @@ public class Spacermvstr {
 }
 
 
-Q.4Write a program to remove all characters from a string except alphabets in a given string
+Q.5Write a program to remove all characters from a string except alphabets in a given string
 
 
 public class Problemstr5 {
@@ -71,5 +71,34 @@ public class Problemstr5 {
      System.out.println(str2);
    }
 }
+
+Q.6Reverse a String. Write a program that reverses a given string. Problem: Given a string, calculate the sum of numbers in a string (multiple consecutive digits
+are considered one number)
+
+
+public class Problemstr6 {
+    public static void main(String[] args) {
+        String str = "123xyz";
+        String rev = "";
+        
+  
+        for (int i = str.length() - 1; i >= 0; i--) {
+            rev = rev + str.charAt(i);
+        }
+    
+        System.out.println(rev);
+        int sum = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (Character.isDigit(c)) {
+                int digit = Character.getNumericValue(c);
+                sum += digit;
+            }
+        }
+        
+        System.out.println("Sum of digits: " + sum);
+    }
+}
+
 
 
