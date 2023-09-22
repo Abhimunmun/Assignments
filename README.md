@@ -1,5 +1,6 @@
 Q.1“Given a string, check if the string is palindrome or not.” A string is
 said to be palindrome if the reverse of the string is the same as the string.
+
 public class Pallindromestrng {
     public static void main(String[] args) {
         String s = "ABCDCBA";
@@ -17,6 +18,8 @@ public class Pallindromestrng {
 }
 
 Q.2 Given a string, write a program to count the number of vowels, consonants, and spaces in that string.
+
+
 public class Checkvowconsstr {
     public static void main(String[] args) {
         String str = "Take u forward is Awesome";
