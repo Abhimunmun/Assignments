@@ -46,4 +46,18 @@ public class Checkvowconsstr {
     }
 }
 
+Q.3 Given a string, write a program to remove all the whitespaces from the string.
+
+
+public class Spacermvstr {
+    public static void main(String[] args) {
+        String str = "Take you forward";
+        str = str.replaceAll("\s", "");
+
+        System.out.println("String after removing whitespaces: " + str);
+    }
+}
+
+
+
 
