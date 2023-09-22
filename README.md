@@ -59,5 +59,17 @@ public class Spacermvstr {
 }
 
 
+Q.4Write a program to remove all characters from a string except alphabets in a given string
+
+
+public class Problemstr5 {
+   public static void main(String[] args)
+   {
+    String str="take12% *&u ^$#forward";
+    String str2=str.replaceAll("[^a-z A-Z]","");
+    str2=str2.replaceAll("\\s","");
+     System.out.println(str2);
+   }
+}
 
 
