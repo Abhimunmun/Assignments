@@ -15,3 +15,32 @@ public class Pallindromestrng {
 
     }
 }
+
+Q.2 Given a string, write a program to count the number of vowels, consonants, and spaces in that string.
+public class Checkvowconsstr {
+    public static void main(String[] args) {
+        String str = "Take u forward is Awesome";
+        int vowel = 0;
+        int cons = 0;
+        int space = 0;
+        
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            ch = Character.toLowerCase(ch);
+            
+            if (ch == ' ') {
+                space++;
+            } else if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                vowel++;
+            } else if (Character.isLetter(ch)) {
+                cons++;
+            }
+        }
+        
+        System.out.println("Vowels: " + vowel);
+        System.out.println("Consonants: " + cons);
+        System.out.println("White spaces: " + space);
+    }
+}
+
+
