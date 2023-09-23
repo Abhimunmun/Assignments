@@ -124,5 +124,38 @@ public class Problemstr6 {
     }
 }
 
+Q.8  Given two strings, check if two strings are anagrams of each other or not.
+
+
+import java.util.*;
+public class Problemstr8 {
+
+    public static void main(String[] args)
+    {  
+
+        String s1="CAT";
+        String s2="TAC";
+          char c1[]=s1.toCharArray();
+          char c2[]=s2.toCharArray();
+        if(c1.length!=c2.length)  
+        {
+            System.out.println("not anagram");
+        }
+         Arrays.sort(c1);
+         Arrays.sort(c2);
+
+         for(int i=0;i<c1.length;i++)
+         {
+            if(c1[i]!=c2[i])
+            {
+                System.out.println("not anagram");
+            }
+         }
+             System.out.println("Anagram");
+        }
+    }
+
+
+
 
 
