@@ -140,6 +140,7 @@ public class Problemstr8 {
         if(c1.length!=c2.length)  
         {
             System.out.println("not anagram");
+            System.exit(0);
         }
          Arrays.sort(c1);
          Arrays.sort(c2);
@@ -149,6 +150,7 @@ public class Problemstr8 {
             if(c1[i]!=c2[i])
             {
                 System.out.println("not anagram");
+                System.exit(0);
             }
          }
              System.out.println("Anagram");
